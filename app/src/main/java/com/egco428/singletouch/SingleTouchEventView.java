@@ -39,14 +39,14 @@ public class SingleTouchEventView extends View {
         eventX = event.getX();
         eventY = event.getY();
         switch (event.getAction()) {
-            case: MotionEvent.ACTION_DOWN;
+            case MotionEvent.ACTION_DOWN:
             fingerDown = true;
             path.moveTo(eventX,eventY);
             return true;
-            case: MotionEvent.ACTION_MOVE;
+            case MotionEvent.ACTION_MOVE:
             path.lineTo(eventX,eventY);
             break;
-            case: MotionEvent.ACTION_UP;
+            case MotionEvent.ACTION_UP:
             fingerDown = false;
             break;
         }
